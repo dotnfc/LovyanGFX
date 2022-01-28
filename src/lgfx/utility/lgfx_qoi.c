@@ -30,8 +30,8 @@ typedef union
   unsigned int v;
 } qoi_rgba_t;
 
-
-typedef struct __attribute__((packed)) _qoi_desc_t
+#include "ceport.h"
+typedef PACKED_STRUCT(_qoi_desc_t)
 {
   unsigned int width;
   unsigned int height;

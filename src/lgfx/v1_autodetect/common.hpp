@@ -55,6 +55,10 @@ Contributors:
 
   #include "LGFX_AutoDetect_STM32.hpp"
 
+#elif defined TARGET_SDL2
+
+  #include "LGFX_AutoDetect_SDL2.hpp"
+  
 #elif __has_include(<opencv2/opencv.hpp>)
 
   #include "LGFX_AutoDetect_OpenCV.hpp"

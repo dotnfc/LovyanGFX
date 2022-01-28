@@ -1164,6 +1164,7 @@ namespace lgfx
     const FixedBMPfont AsciiFont8x16  = { FontLib8x16 , font0_info,  8, 16, 13 };
     const FixedBMPfont AsciiFont24x48 = { FontLib24x48, fontlib24x48_info, 24, 48, 40 };
 
+#ifndef TARGET_SDL2
     const U8g2font lgfxJapanMincho_8   = { lgfx_font_japan_mincho_8    };
     const U8g2font lgfxJapanMincho_12  = { lgfx_font_japan_mincho_12   };
     const U8g2font lgfxJapanMincho_16  = { lgfx_font_japan_mincho_16   };
@@ -1284,6 +1285,7 @@ namespace lgfx
     const U8g2font efontTW_24_b   = { lgfx_efont_tw_24_b  };
     const U8g2font efontTW_24_bi  = { lgfx_efont_tw_24_bi };
     const U8g2font efontTW_24_i   = { lgfx_efont_tw_24_i  };
+#endif // TARGET_SDL2
   }
  }
 }

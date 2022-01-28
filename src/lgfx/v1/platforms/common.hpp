@@ -49,7 +49,11 @@ Contributors:
 
 #include "arduino_default/common.hpp"
 
-#elif defined (_WIN32) || __has_include(<opencv2/opencv.hpp>)
+#elif defined (TARGET_SDL2)
+
+#include "sdl2/common.hpp"
+
+#elif defined (_WIN32) && __has_include(<opencv2/opencv.hpp>)
 
 #include "opencv/common.hpp"
 

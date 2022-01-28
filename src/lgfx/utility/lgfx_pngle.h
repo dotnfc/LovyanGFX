@@ -33,6 +33,7 @@
 #define __LGFX_PNGLE_H__
 
 #include <stdint.h>
+#include "ceport.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -62,7 +63,7 @@ uint32_t lgfx_pngle_get_height(pngle_t *pngle);
 // Debug interfaces
 // ----------------
 
-typedef struct __attribute__((packed)) _pngle_ihdr_t {
+typedef PACKED_STRUCT(_pngle_ihdr_t) {
   uint32_t width;
   uint32_t height;
   uint8_t depth;

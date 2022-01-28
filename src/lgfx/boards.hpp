@@ -39,6 +39,7 @@ namespace lgfx
     , board_M5UnitOLED
     , board_M5AtomDisplay
     , board_FeatherM4_HX8357
+    , board_SDL2
     };
   }
   using namespace boards;
